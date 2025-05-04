@@ -15,5 +15,8 @@ RUN mkdir -p /app/data /app/models
 # Environment variables
 ENV PYTHONUNBUFFERED=1
 
+# Entrypoint for the container
+ENTRYPOINT ["python", "main.py"]
+
 # Default command for training
-CMD ["python", "main.py", "--epochs", "10", "--save-model"]
+CMD ["--epochs", "10", "--save-model"]
