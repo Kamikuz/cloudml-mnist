@@ -1,0 +1,8 @@
+k8s
+.env*
+*.sh
+.git
+__pycache__
+.venv
+.vscode
+.github
